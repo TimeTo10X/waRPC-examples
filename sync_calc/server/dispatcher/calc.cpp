@@ -3,7 +3,7 @@
 
 #include "../../schema/messages.hpp"
 
-RPC(calc_api, 0) {
+RPC(calc_api, calc::Routes::Calc | calc::tu) {
     const auto& calc_req = request | calc::as<calc::CalcRequest>;
 
     double result = 0;

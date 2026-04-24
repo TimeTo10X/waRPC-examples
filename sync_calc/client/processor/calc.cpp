@@ -4,5 +4,5 @@
  * leave it emty.
  *
  * NOTE: You still need to call wa_codegen() inside
- * you cmake, othervise project won't compile
+ * your cmake, othervise project won't compile
  */
