@@ -1,6 +1,7 @@
 /*
  * Copyright (c) 2026 wanime.io. All Rights Reserved.
  */
+
 #include <wanime-client-sdk/client.h>
 
 #include <wanime-sdk/utils.hpp>

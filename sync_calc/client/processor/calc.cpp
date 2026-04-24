@@ -1,4 +1,8 @@
 /*
+ * Copyright (c) 2026 wanime.io. All Rights Reserved.
+ */
+
+/*
  * Sync API doesn't require you to define any RPC()
  * inside processor, unlike async API, so you can just
  * leave it emty.
