@@ -6,3 +6,6 @@
 
 .clangd
 *.env
+
+# cc
+compile_commands.json
