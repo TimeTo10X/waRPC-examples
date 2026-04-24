@@ -1,0 +1,33 @@
+xpp:
+    cmake -S . -B build -G Ninja \
+        --toolchain /usr/local/lib/cmake/wanime-sdk/llvm-toolchain.cmake \
+        -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+        -DCMAKE_BUILD_TYPE=Release \
+    && cp build/compile_commands.json .
+
+bb:
+    #!/bin/bash
+    if [ "{{ os() }}" = "macos" ]; then
+        MACOSX_DEPLOYMENT_TARGET=26.0 ninja -C build
+    else
+        ninja -C build
+    fi
+
+clean:
+    rm -rf build
+
+run target:
+    #!/usr/bin/env bash
+    if [ "{{target}}" = "server" ]; then
+        ./build/server/calc_server --port 6666 --ipv 6 --peer-bidi-stream-count 65000 --peer-unidi-stream-count 65000 --cert-file "./certs/localhost+2.pem" --key-file "./certs/localhost+2-key.pem" --execution-profile "real-time" --profile "default"
+    elif [ "{{target}}" = "client" ]; then
+        ./build/client/calc_client --server "::1" --ipv 6 --port 6666 --default_profile
+    else
+        echo "Unknown target: {{target}}"
+        exit 1
+    fi
+
+certs: 
+    mkcert -key-file ./certs/localhost+2-key.pem -cert-file ./certs/localhost+2.pem localhost 127.0.0.1 ::1
+
+
