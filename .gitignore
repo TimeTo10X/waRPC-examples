@@ -1,0 +1,7 @@
+# Build dirs
+**/build/
+
+# Generated certs
+**/certs/
+
+.clangd
