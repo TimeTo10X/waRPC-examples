@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2026 wanime.io. All Rights Reserved.
+ */
+
 #include <print>
 #include <wanime-client-sdk/framework/client.hpp>
 #include <wanime-client-sdk/rpc/rpc.hpp>
