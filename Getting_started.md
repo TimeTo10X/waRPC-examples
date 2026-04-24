@@ -25,7 +25,7 @@ To run a specific example:
 
 ```sh
 gh repo clone TimeTo10X/waRPC-examples
-cd waRPC=examples/<example_name>
+cd waRPC-examples/<example_name>
 
 # Configure and build example project
 just init
