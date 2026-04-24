@@ -4,6 +4,9 @@
 # Cache
 **/.cache
 
+# Generated
+**/schema/*.hpp
+
 # Generated certs
 **/certs/
 
