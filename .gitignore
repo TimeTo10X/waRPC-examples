@@ -1,6 +1,9 @@
 # Build dirs
 **/build/
 
+# Cache
+**/.cache
+
 # Generated certs
 **/certs/
 
