@@ -49,4 +49,4 @@ All of the API documentation can be found at [wanime.io/warpc](https://wanime.io
 
 # License
 
-All of the projects inside this repo are licensed under MIT license.
+All of the projects inside this repo are licensed under [MIT](LICENSE) license.
