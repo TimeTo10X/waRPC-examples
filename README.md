@@ -45,7 +45,7 @@ curl -fsSL https://wrsc.wanime.io/install.sh | sh
 
 After installing `wapm`, you will also need to install a few of the core `waRPC` libraries:
   - wanime-sdk: Bundle of core waRPC SDK libraries
-  - polyglot: Serealization protocol
+  - polyglot: Serialization protocol
 
 Install via `wapm`
 
