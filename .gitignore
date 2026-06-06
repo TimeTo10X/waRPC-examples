@@ -1,17 +1,29 @@
 # Build dirs
 **/build/
+**/target/
+
+# Vendors
+./c++/external/
 
 # Cache
 **/.cache
 
 # Generated
 **/schema/*.hpp
+**/schema/*.rs
+**/schema/*.go
+**/schema/*.odin
 
-# Generated certs
+# Certs 
 **/certs/
+*.conf
+*.pem
 
-.clangd
 *.env
 
 # cc
 compile_commands.json
+
+# Language servers
+.clangd
+ols.json
