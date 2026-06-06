@@ -34,10 +34,23 @@ In order to proceed with the examples, you will need to install the following to
   - wapm - WAnime package manager
   - wrsc - WAnime RPC schema compiler
 
-Installing wapm && wrsc
+Installing wapm && wrsc:
+
 ```sh
 curl -fsSL https://wapm.wanime.io/install.sh | sh
 curl -fsSL https://wrsc.wanime.io/install.sh | sh
+```
+
+### waRPC Core Libs
+
+After installing `wapm`, you will also need to install a few of the core `waRPC` libraries:
+  - wanime-sdk: Bundle of core waRPC SDK libraries
+  - polyglot: Serealization protocol
+
+Install via `wapm`
+
+```sh
+TODO
 ```
 
 ## Dev Setup
