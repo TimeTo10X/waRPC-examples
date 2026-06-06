@@ -1,0 +1,21 @@
+[package]
+name = "rust"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "exmp"
+path = "src/lib.rs"
+
+[dependencies]
+ctrlc = "3.5.2"
+warpc = { path = "../warpc/rust/warpc" }
+warpc-macros = { path = "../warpc/rust/warpc-macros" }
+
+[[bin]]
+name = "client"
+path = "bin/client.rs"
+
+[[bin]]
+name = "server"
+path = "bin/server.rs"
