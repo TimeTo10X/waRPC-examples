@@ -4,6 +4,7 @@
 
 # Vendors
 ./c++/external/
+./vendor
 
 # Cache
 **/.cache
