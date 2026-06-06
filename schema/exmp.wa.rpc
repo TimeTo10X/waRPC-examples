@@ -1,0 +1,38 @@
+meta {
+    space: exmp
+}
+
+routes {
+    Echo
+    Calc
+}
+
+message Echo {
+    message: string
+}
+
+enum Op : u8 {
+    Add
+    Sub
+    Mul
+    Div
+}
+
+message CalcRequest {
+    a: f64
+    b: f64
+    op: Op
+}
+
+message CalcResponse {
+    result: f64
+}
+
+message CalcError {
+    message: string
+}
+
+endpoints {
+    rpc echo [Echo] Echo > Echo
+    rpc calc [Calc] CalcRequest > CalcResponse
+}
