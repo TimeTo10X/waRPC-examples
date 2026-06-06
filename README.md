@@ -7,3 +7,43 @@
 Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 
 </div>
+
+---
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Dev Setup](#dev-setup)
+3. [C++](#c)
+4. [Odin](#odin)
+5. [Rust](#rust)
+6. [Go](#go)
+7. [Licensing](#licensing)
+
+## Prerequisites
+
+TODO
+
+## Dev Setup
+
+TODO
+
+## C++
+
+TODO
+
+## Odin
+
+TODO
+
+## Rust
+
+TODO
+
+## Go
+
+TODO
+
+## Licensing
+
+TODO
