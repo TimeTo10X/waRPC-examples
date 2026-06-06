@@ -22,6 +22,10 @@ Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 
 ## Prerequisites
 
+waRPC supports following platforms:
+  - MacOS: Intel x64, Apple Silicon
+  - Linux: x64, arm64
+
 TODO
 
 ## Dev Setup
