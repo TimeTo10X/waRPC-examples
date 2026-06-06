@@ -18,7 +18,8 @@ Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 4. [Odin](#odin)
 5. [Rust](#rust)
 6. [Go](#go)
-7. [Licensing](#licensing)
+7. [WebTransport](#webtransport)
+8. [Licensing](#licensing)
 
 ## Prerequisites
 
@@ -72,6 +73,8 @@ TODO
 ## Go
 
 TODO
+
+## WebTransport
 
 ## Licensing
 
