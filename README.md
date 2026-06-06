@@ -34,7 +34,11 @@ In order to proceed with the examples, you will need to install the following to
   - wapm - WAnime package manager
   - wrsc - WAnime RPC schema compiler
 
-TODO
+Installing wapm && wrsc
+```sh
+curl -fsSL https://wapm.wanime.io/install.sh | sh
+curl -fsSL https://wrsc.wanime.io/install.sh | sh
+```
 
 ## Dev Setup
 
