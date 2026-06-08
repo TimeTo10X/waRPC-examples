@@ -21,6 +21,9 @@ Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 7. [WebTransport](#webtransport)
 8. [Licensing](#licensing)
 
+> [!TIP]
+> U can find detailed docs here > [wanime.io/warpc](https://wanime.io/warpc)
+
 ## Prerequisites
 
 ### Platforms
@@ -87,15 +90,46 @@ j cpp_client
 
 ## Odin
 
-TODO
+Start server.
+
+```
+j odin_serve
+```
+
+Run client.
+
+```
+j odin_client
+```
 
 ## Rust
 
-TODO
+Start server.
+
+```
+j rust_serve
+```
+
+Run client.
+
+```
+j rust_client
+```
 
 ## Go
 
-TODO
+
+Start server.
+
+```
+j go_serve
+```
+
+Run client.
+
+```
+j go_client
+```
 
 ## WebTransport
 
