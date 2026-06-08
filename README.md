@@ -147,7 +147,11 @@ j go_client
 
 ## WebTransport
 
-TODO
+Spin up any `waRPC` server:
+
+```sh
+j cpp_serve|odin_serve|rust_serve|go_serve
+```
 
 ## Licensing
 
