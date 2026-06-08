@@ -57,6 +57,10 @@ Install via `wapm`
 TODO
 ```
 
+> [!IMPORTANT]
+> Please note that, each package in `wapm` has its own license attached to it! </br>
+> Some of the packages may also require a `license key`.
+
 ## Dev Setup
 
 TODO
