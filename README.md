@@ -83,4 +83,6 @@ TODO
 
 ## Licensing
 
-TODO
+- [Non-Commercial](https://)
+- [Commercial](https://)
+- [Enterprise](https://)
