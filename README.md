@@ -75,6 +75,13 @@ TODO
 
 TODO
 
+> [!TIP]
+> `waRPC` is language agnostic, so u can do smth like this:
+>
+> - `c++ client` <-> `odin server`
+> - `c++ client` <-> `go server`
+> - `odin client` <-> `rust server`
+
 ## C++
 
 Building `c++` examples.
