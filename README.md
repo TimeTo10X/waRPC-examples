@@ -67,7 +67,23 @@ TODO
 
 ## C++
 
-TODO
+Building `c++` examples.
+
+```
+j cpp_build
+```
+
+Start server.
+
+```
+j cpp_serve
+```
+
+Run client.
+
+```
+j cpp_client
+```
 
 ## Odin
 
