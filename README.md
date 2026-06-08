@@ -155,6 +155,6 @@ j cpp_serve|odin_serve|rust_serve|go_serve
 
 ## Licensing
 
-- [Non-Commercial](https://)
-- [Commercial](https://)
-- [Enterprise](https://)
+- [WAnime RPC Non-Commercial](https://)
+- [WAnime RPC Commercial](https://)
+- [WAnime RPC Enterprise](https://)
