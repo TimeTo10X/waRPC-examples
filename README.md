@@ -39,6 +39,9 @@ Installing wapm && wrsc:
 
 ```sh
 curl -fsSL https://wapm.wanime.io/install.sh | sh
+```
+
+```sh
 curl -fsSL https://wrsc.wanime.io/install.sh | sh
 ```
 
