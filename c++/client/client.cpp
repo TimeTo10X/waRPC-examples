@@ -2,11 +2,13 @@
 #include <wanime-client-sdk/client.h>
 #include <wanime-sdk/framework/utils.h>
 #include <wanime-sdk/tokyo_main.h>
+#include <wanime-sdk/utils/ctime.h>
 #include <wanime-sdk/warpc/status.h>
 
 #include <tokyo/tokyo_main.hxx>
 
 #include "../../schema/exmp.hpp"
+#include "../sync/sync.h"
 
 namespace _sync {
 
@@ -116,18 +118,30 @@ auto run_calc_div_0(wa_client::Client* c) -> void {
 }  // namespace _async
 
 tokyo {
+    __time(init);
     const auto [c, opts] = setup_tokyo_client(argc, argv);
 
     wa_client::init(*c);
+    time__(init);
 
+    __time(connect);
     const auto connection_st = wa_client::connect(*c, opts.server_ip, opts.server_port);
 
     if (connection_st.failed()) {
         std::println("Failed to connect! status: [{}]", connection_st.code());
         return connection_st.code();
     }
+    time__(connect);
 
+    _sync::run_echo(c);
+    _sync::run_calc(c);
     _sync::run_calc_div_0(c);
+
+    _async::run_echo(c);
+    _async::run_calc(c);
+    _async::run_calc_div_0(c);
+
+    wait_async_exec.wait();
 
     _ 0;
 }
