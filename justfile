@@ -28,6 +28,12 @@ mac_compilers := if os() == "macos" {
 export CC := cc
 export CXX := cxx
 
+wrsc:
+    wrsc -c schema --xlang cxx
+    wrsc -c schema --xlang odin
+    wrsc -c schema --xlang rust
+    wrsc -c schema --xlang go
+
 h:
     echo "rtfm! ^_^"
 
@@ -121,7 +127,7 @@ cpp_build:
         -DCMAKE_CXX_STANDARD=23 \
         -DCMAKE_CXX_STANDARD_REQUIRED=ON \
         {{mac_compilers}} \
-    && cp build/compile_commands.json . \
+    && ln -sf build/compile_commands.json ./compile_commands.json \
     && ninja -C build
 
 cpp_client:
@@ -178,3 +184,5 @@ go_serve:
     CXX=$(xcrun -f clang++) \
     go -C go run ./server
 
+wt_run:
+    cd ./webtransport/ && deno run dev
