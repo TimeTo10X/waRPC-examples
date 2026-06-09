@@ -82,6 +82,10 @@ Compile `.wa.rpc` schema files
 j wrsc
 ```
 
+Generate cert files for server
+
+```sh
+j trust-certs
 ```
 
 > [!TIP]
@@ -96,25 +100,19 @@ j wrsc
 Building `c++` examples.
 
 ```
-
 j cpp_build
-
 ```
 
 Start server.
 
 ```
-
 j cpp_serve
-
 ```
 
 Run client.
 
 ```
-
 j cpp_client
-
 ```
 
 ## Odin
@@ -122,17 +120,13 @@ j cpp_client
 Start server.
 
 ```
-
 j odin_serve
-
 ```
 
 Run client.
 
 ```
-
 j odin_client
-
 ```
 
 ## Rust
@@ -140,17 +134,13 @@ j odin_client
 Start server.
 
 ```
-
 j rust_serve
-
 ```
 
 Run client.
 
 ```
-
 j rust_client
-
 ```
 
 ## Go
@@ -159,17 +149,13 @@ j rust_client
 Start server.
 
 ```
-
 j go_serve
-
 ```
 
 Run client.
 
 ```
-
 j go_client
-
 ````
 
 ## WebTransport
@@ -179,6 +165,12 @@ Spin up any `waRPC` server:
 ```sh
 j cpp_serve|odin_serve|rust_serve|go_serve
 ````
+
+Run demo
+
+```sh
+j wt_run
+```
 
 ## Licensing
 
