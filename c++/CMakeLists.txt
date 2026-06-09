@@ -18,8 +18,7 @@ include(wa_codegen)
 
 find_package(wanime-client-sdk REQUIRED)
 find_package(wanime-server-sdk REQUIRED)
-
-add_subdirectory(external/polyglot)
+find_package(polyglot REQUIRED)
 
 add_subdirectory(client)
 add_subdirectory(server)
