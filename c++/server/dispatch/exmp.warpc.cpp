@@ -12,7 +12,7 @@ RPC(echo, Routes::Echo | tu) {
 
     rq | exmp::print;
 
-    exmp::make_echo(out, rq.message);
+    w exmp::make_echo(out, cap, rq.message).value();
 
     return warpc::Success;
 }
@@ -35,7 +35,7 @@ RPC(calc, Routes::Calc | tu) {
         break;
     case exmp::Op::Div:
         if (rq.b == 0) {
-            exmp::make_calc_error(out, "Division by zero!");
+            w exmp::make_calc_error(out, cap, "Division by zero!").value();
             return warpc::Failure;
         }
 
@@ -43,7 +43,7 @@ RPC(calc, Routes::Calc | tu) {
         break;
     }
 
-    exmp::make_calc_response(out, result);
+    w exmp::make_calc_response(out, cap, result).value();
 
     return warpc::Success;
 }
