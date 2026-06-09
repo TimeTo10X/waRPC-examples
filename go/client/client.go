@@ -1,34 +1,17 @@
 package main
 
 import (
-	"fmt"
 	"log"
-	"os"
-	"os/signal"
 	"sync"
-	"syscall"
-	"time"
 
-	wrsc "github.com/wanime/warpc-go/schema"
+	"github.com/wanime/warpc-go-examples/go/common"
+	wrsc "github.com/wanime/warpc-go-examples/schema"
 	client "github.com/wanime/warpc/client"
 )
 
-const RouteEcho uint16 = 0
+var wg sync.WaitGroup
 
 func main() {
-	var wg sync.WaitGroup
-
-	client.RegisterRpcHandler(RouteEcho, func(req []byte, status int16) (rt_status int16) {
-		echo, err := wrsc.DecodeEcho(req)
-
-		if err != nil {
-			log.Printf("[echo] Async echo request failed!")
-		}
-
-		log.Printf("[echo] %d message: %v", len(req), echo.Message)
-		wg.Done()
-		return 0
-	})
 
 	c, err := client.NewClient(client.Options{
 		ServerIP:   "::1",
@@ -49,23 +32,23 @@ func main() {
 
 	wrsc.MakeEcho(&echo_buff, &echo_request)
 
-	resp, status, err := c.CallSync(RouteEcho, echo_buff)
+	resp, status, err := c.CallSync(common.RouteEcho, echo_buff)
 
 	if err != nil {
 		log.Fatalf("sync: %v", err)
 	}
 
-	if !client.StatusIsSuccess(status) {
+	if status != 0 {
 		log.Fatalf("sync server returned status=0x%02x", status)
 	}
 
 	sync_response, _ := wrsc.DecodeEcho(resp)
 
-	fmt.Printf("sync response: %v\n", sync_response.Message)
+	log.Printf("sync response: %v\n", sync_response.Message)
 
 	wg.Add(1)
 
-	err = c.CallAsync(RouteEcho, echo_buff)
+	err = c.CallAsync(common.RouteEcho, echo_buff)
 
 	if err != nil {
 		log.Fatalf("async: %v", err)
@@ -73,5 +56,3 @@ func main() {
 
 	wg.Wait()
 }
-
-
