@@ -28,3 +28,6 @@ compile_commands.json
 # Language servers
 .clangd
 ols.json
+
+# Wt Front-end
+**/node_modules/
