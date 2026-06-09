@@ -11,13 +11,7 @@ import (
 	waserver "github.com/wanime/warpc/server"
 )
 
-const RouteEcho uint16 = 0
-
 func main() {
-	waserver.RegisterRpcHandler(RouteEcho, func(req []byte) ([]byte, int16) {
-		return append([]byte(nil), req...), waserver.StatusSuccess
-	})
-
 	certDir, _ := filepath.Abs("../certs")
 	srv, err := waserver.NewServer(waserver.Options{
 		CertFile: filepath.Join(certDir, "localhost-ec.pem"),
