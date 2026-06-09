@@ -173,15 +173,9 @@ rust_serve:
     cargo run --bin server
 
 go_client:
-    SDKROOT=$(xcrun --show-sdk-path) \
-    CC=$(xcrun -f clang) \
-    CXX=$(xcrun -f clang++) \
     go -C go run ./client
 
 go_serve:
-    SDKROOT=$(xcrun --show-sdk-path) \
-    CC=$(xcrun -f clang) \
-    CXX=$(xcrun -f clang++) \
     go -C go run ./server
 
 wt_run:
