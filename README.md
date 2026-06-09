@@ -82,8 +82,6 @@ Compile `.wa.rpc` schema files
 j wrsc
 ```
 
-```
-
 > [!TIP]
 > `waRPC` is language agnostic, so u can do smth like this:
 >
