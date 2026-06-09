@@ -124,9 +124,6 @@ cpp_build:
         -DCMAKE_MODULE_PATH={{wa_module}} \
         -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
         -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_CXX_STANDARD=23 \
-        -DCMAKE_CXX_STANDARD_REQUIRED=ON \
-        {{mac_compilers}} \
     && ln -sf build/compile_commands.json ./compile_commands.json \
     && ninja -C build
 
