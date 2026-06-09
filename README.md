@@ -168,6 +168,12 @@ Spin up any `waRPC` server:
 j cpp_serve|odin_serve|rust_serve|go_serve
 ````
 
+Run demo
+
+```sh
+j wt_run
+```
+
 ## Licensing
 
 - [WAnime RPC Non-Commercial](https://)
