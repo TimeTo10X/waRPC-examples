@@ -29,21 +29,23 @@ Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 ### Platforms
 
 waRPC supports following platforms:
-  - MacOS:
-    - Intel x64
-    - Apple Silicon arm64
-  - Linux:
-    - x64
-    - arm64
-  - IOS:
-    - 16.3+
-    - arm64
+
+- MacOS:
+  - Intel x64
+  - Apple Silicon arm64
+- Linux:
+  - x64
+  - arm64
+- IOS:
+  - 16.3+
+  - arm64
 
 ### Tools
 
 In order to proceed with the examples, you will need to install the following tools:
-  - wapm - WAnime package manager
-  - wrsc - WAnime RPC schema compiler
+
+- wapm - WAnime package manager
+- wrsc - WAnime RPC schema compiler
 
 Installing wapm && wrsc:
 
@@ -58,8 +60,9 @@ curl -fsSL https://wrsc.wanime.io/install.sh | sh
 ### waRPC Core Libs
 
 After installing `wapm`, you will also need to install a few of the core `waRPC` libraries:
-  - wanime-sdk: Bundle of core waRPC SDK libraries
-  - polyglot: Serialization protocol
+
+- wanime-sdk: Bundle of core waRPC SDK libraries
+- polyglot: Serialization protocol
 
 Install via `wapm`
 
@@ -73,7 +76,13 @@ TODO
 
 ## Dev Setup
 
-TODO
+Compile `.wa.rpc` schema files
+
+```sh
+j wrsc
+```
+
+```
 
 > [!TIP]
 > `waRPC` is language agnostic, so u can do smth like this:
@@ -87,19 +96,25 @@ TODO
 Building `c++` examples.
 
 ```
+
 j cpp_build
+
 ```
 
 Start server.
 
 ```
+
 j cpp_serve
+
 ```
 
 Run client.
 
 ```
+
 j cpp_client
+
 ```
 
 ## Odin
@@ -107,13 +122,17 @@ j cpp_client
 Start server.
 
 ```
+
 j odin_serve
+
 ```
 
 Run client.
 
 ```
+
 j odin_client
+
 ```
 
 ## Rust
@@ -121,13 +140,17 @@ j odin_client
 Start server.
 
 ```
+
 j rust_serve
+
 ```
 
 Run client.
 
 ```
+
 j rust_client
+
 ```
 
 ## Go
@@ -136,14 +159,18 @@ j rust_client
 Start server.
 
 ```
+
 j go_serve
+
 ```
 
 Run client.
 
 ```
+
 j go_client
-```
+
+````
 
 ## WebTransport
 
@@ -151,7 +178,7 @@ Spin up any `waRPC` server:
 
 ```sh
 j cpp_serve|odin_serve|rust_serve|go_serve
-```
+````
 
 ## Licensing
 
