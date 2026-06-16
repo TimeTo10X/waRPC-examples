@@ -32,7 +32,7 @@ waRPC supports following platforms:
 
 - MacOS:
   - amd64
-  - arm64 (Apple Silicon)
+  - arm64
 - Linux:
   - amd64
   - arm64
