@@ -177,3 +177,4 @@ j wt_run
 - [WAnime RPC Non-Commercial](https://)
 - [WAnime RPC Commercial](https://)
 - [WAnime RPC Enterprise](https://)
+- [Third Party Notices](THIRD-PARTY-NOTICES)
