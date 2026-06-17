@@ -177,7 +177,7 @@ j wt_run
 
 ## Licensing
 
-- [WAnime RPC Non-Commercial](https://)
-- [WAnime RPC Commercial](https://)
-- [WAnime RPC Enterprise](https://)
-- [Third Party Notices](THIRD-PARTY-NOTICES)
+- [WAnime RPC ^ Non-Commercial](https://)
+- [WAnime RPC ^ Commercial](https://)
+- [WAnime RPC ^ Enterprise](https://)
+- [WAnime RPC ^ Third Party Notices](THIRD-PARTY-NOTICES)
