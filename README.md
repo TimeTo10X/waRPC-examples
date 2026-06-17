@@ -57,6 +57,9 @@ curl -fsSL https://wapm.wanime.io/install.sh | sh
 curl -fsSL https://wrsc.wanime.io/install.sh | sh
 ```
 
+> [!TIP]
+> For the `c++` examples you will also need to install [`tokyo`](https://github.com/Akzestia/tokyo.git)
+
 ### waRPC Core Libs
 
 After installing `wapm`, you will also need to install a few of the core `waRPC` libraries:
