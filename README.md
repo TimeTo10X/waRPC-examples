@@ -4,7 +4,7 @@
 
 [English](README.md) | [日本語](README_jp.md) | [台灣中文](README_tw.md)
 
-Blazingly fast RPC framework built by [wanime.io](https://wanime.io
+Blazingly fast RPC framework built by [wanime.io](https://wanime.io)
 
 WAnime RPC [Benchmarks](https://github.com/TimeTo10X/waRPC-Benchmarks)
 
