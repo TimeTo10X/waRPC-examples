@@ -67,7 +67,7 @@ After installing `wapm`, you will also need to install a few of the core `waRPC`
 Install via `wapm`
 
 ```sh
-TODO
+wapm y TODO
 ```
 
 > [!IMPORTANT]
