@@ -31,3 +31,5 @@ ols.json
 
 # Wt Front-end
 **/node_modules/
+
+*.DS*
