@@ -72,7 +72,7 @@ After installing `wapm`, you will also need to install a few of the core `waRPC`
 Install via `wapm`
 
 ```sh
-wapm y TODO
+wapm y warpc polyglot --version 0.1.0
 ```
 
 > [!IMPORTANT]
